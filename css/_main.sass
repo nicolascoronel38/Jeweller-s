@@ -1,0 +1,106 @@
+main
+    .about-us
+        margin-bottom: 50px
+        .title
+            width: 70%
+            font-size: 40px
+            text-transform: uppercase
+            display: inline-block
+            margin-bottom: 20px
+        .link
+            display: inline-block
+            color: $lightPurple
+            font-weight: 700
+            border-bottom: 1px solid transparent
+            transition: .4s ease all
+            &:hover
+                text-decoration: none
+                letter-spacing: 4px
+                border-bottom: 1px solid $lightPurple
+    .products
+        background: $grey
+        padding: 20px
+        margin-bottom: 50px
+        .title
+            width: 70%
+            font-size: 40px
+            text-transform: uppercase
+            display: inline-block
+        .product
+            position: relative
+            width: 100%
+            &:hover
+                .overlay
+                    height: 100%
+                    opacity: .8
+            .overlay
+                width: 100%
+                height: 0%
+                position: absolute
+                bottom: 0
+                right: 0
+                left: 0
+                background: $lightPurple
+                overflow: hidden
+                transition: .4s ease all
+                cursor: pointer
+                .overlay-text
+                    top: 50%
+                    left: 50%
+                    position: absolute
+                    white-space: nowrap
+                    color: $white
+                    font-size: 18px
+                    transform: translate(-50%, -50%)
+                    overflow: hidden
+                    border-top: 1px solid white
+                    border-bottom: 1px solid white
+                    padding: 0
+        .btn-products
+            background-color: $lightPurple
+            color: #fff
+            padding: 4px 20px
+            text-transform: uppercase
+            font-size: 16px
+            font-weight: 700
+            border: 2px solid transparent
+            transition: .4s ease all
+            letter-spacing: 1px
+            &:hover
+                background-color: transparent
+                border: 2px solid $lightPurple
+                color: $lightPurple
+    .we
+        article
+            figure
+                margin-bottom: 50px
+                .title
+                    font-size: 22px
+                    font-weight: bold
+                    margin: 2% 0
+                p
+                    padding: 0
+                    margin: 0
+                img
+                    width: 30%
+    .galery
+        margin-bottom: 50px
+        img
+            height: 100%
+            width: 98%
+            object-fit: cover
+            opacity: .8
+            transition: .4s ease all
+            margin: 0 5px
+            &:hover
+                cursor: pointer
+                opacity: 1
+                box-shadow: 0 0 15px 2px rgba(0,0,0,.4)
+                transition: .4s ease all
+    .contact
+        margin-bottom: 12px
+        .phone-number
+            p
+                display: inline-block
+                margin-top: 20px
+                padding: 0 30px

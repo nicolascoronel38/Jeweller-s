@@ -1,0 +1,44 @@
+header
+    background-image: url(../img/bg/bg1.jpg)
+    width: 100%
+    height: 100vh
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+    .background
+        width: 0%
+        max-width: 100%
+        height: 100%
+        .text
+            width: calc(100vw - 20px)
+            height: 100vh
+            font-size: 90px
+            font-family: $notoSerif
+            font-style: italic
+            display: flex
+            align-items: center
+            justify-content: center
+            color: $titleColour
+            mix-blend-mode: multiply
+.menu
+    background-color: $purple
+    width: 100%
+    position: sticky
+    top: 0
+    padding: 5px
+    z-index: 10
+    text-align: center
+    font-family: $notoSerif
+    font-stretch: italic
+    margin-bottom: 50px
+    a
+        display: inline-block
+        padding: 8px 24px
+        background-color: $purple
+        margin: 0 8px
+        transition: .4s ease all
+        color: $grey
+        text-decoration: none
+        &:hover
+            transform: translateY(10px)
+            background-color: $lightPurple

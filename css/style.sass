@@ -1,0 +1,49 @@
+$darkPurple: #170312
+$purple: #33032d
+$lightPurple: #531253
+$grey: #eaeaea
+$white: #f4fffd
+$titleColour: #0f0c29
+$notoSerif: 'Noto Serif', serif
+$openSans: 'Open Sans', serif
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+ 
+body
+    font-size: 20px
+    font-family: $openSans
+
+p
+    padding: 22px
+
+.subtitle
+    font-size: 20px
+    color: $darkPurple
+    font-family: $notoSerif
+    z-index: 100
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 20px
+    span
+        background-color: $grey
+        padding: 4px 15px
+        z-index: 90
+        position: relative 
+    &::after
+        content: ''
+        display: inline-block
+        height: 2px
+        width: 100%
+        background-color: $darkPurple
+        position: relative
+        top: -30px
+        z-index: 80
+
+@import header
+@import main
+@import bookmark
+@import footer
+@import mediaqueries
